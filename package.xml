@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+    <name>Netz98_ModuleCreator</name>
+    <version>1.0.0</version>
+    <stability>beta</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>The original ModuleCreator now available as an extension! With great new features!</summary>
+    <description>The very popular ModuleCreator is now available via Magento Connect. It seamlessly integrates into your Magento installation and is available unter http://your.magento/moduleCreator/. Its interface is protected by your Magento Admin credentials.
+
+It is now even more flexible: Use and distribute your own module skeletons (blank modules). The new ModuleCreator is capable of scanning its local skeleton template dir to auto-detect custom module skeletons. You can select from the dropdown menu which skeleton to use.
+
+Writing your own skeleton is very easy: Simplify your process of module creation.
+
+Be part of the open source community: distribute your skeletons via Magento Connect and help other developers to speed up their developing time.</description>
+    <notes>Looking forward to your feedback!</notes>
+    <authors><author><name>Daniel Nitz</name><user>auto-converted</user><email>d.nitz@netz98.de</email></author></authors>
+    <date>2009-04-06</date>
+    <time>10:00:28</time>
+    <contents><target name="mageweb"><dir name="moduleCreator"><file name="index.php" hash="d839143ff91d18f55e48a2bac5fbda37"/><dir name="Netz98"><dir name="Admin"><dir name="Model"><file name="Session.php" hash="8174d16b4725261853368f0a2d1a64ff"/></dir></dir><dir name="Templates"><dir name="Config"><file name="Abstract.php" hash="8502c8c9c00a12f8fa3bedf2b0a13fe0"/></dir></dir></dir><dir name="Templates"><dir name="Blank"><file name="Config.php" hash="035256900b2972847341379022bf24bc"/><dir name="app"><dir name="code"><dir name="local"><dir name="Namespace"><dir name="Module"><dir name="Block"><file name="Module.php" hash="9f3e4a6dd3f2f5080e1206ad62c55dea"/><dir name="Adminhtml"><file name="Module.php" hash="2e5db6f63441082dba415c296b4988ed"/><dir name="Module"><file name="Edit.php" hash="67af903939fb67476f2d66d8a2a5e59f"/><file name="Grid.php" hash="a0fea7fb48561ae761842168ab667754"/><dir name="Edit"><file name="Form.php" hash="758af93ad7fc3166c10d0bbdb410f0cf"/><file name="Tabs.php" hash="f620417609f19795373170068f65b5f2"/><dir name="Tab"><file name="Form.php" hash="42ddbc945efac468d362f490814776dd"/></dir></dir></dir></dir></dir><dir name="controllers"><file name="IndexController.php" hash="969f13e8e8a099e22b5b030986a63447"/><dir name="Adminhtml"><file name="ModuleController.php" hash="9c597f42ac92d8789728c357c8f98672"/></dir></dir><dir name="etc"><file name="config.xml" hash="2639da8075db8b8304ae8fcbc6f2ee61"/></dir><dir name="Helper"><file name="Data.php" hash="05f3c1200508514005d68765865a48bd"/></dir><dir name="Model"><file name="Module.php" hash="e579b46a98c2704de9c325398273744b"/><file name="Status.php" hash="1698118fac8e43550480dd9b0c3cbdc5"/><dir name="Mysql4"><file name="Module.php" hash="68e76c1c1a1390c1a0599913d9d0b36e"/><dir name="Module"><file name="Collection.php" hash="b0a314d1350423c0b6e15c6255bbb216"/></dir></dir></dir><dir name="sql"><dir name="module_setup"><file name="mysql4-install-0.1.0.php" hash="9adafa251e28ea1085823572f5795487"/></dir></dir></dir></dir></dir></dir><dir name="design"><dir name="adminhtml"><dir name="interface"><dir name="theme"><dir name="layout"><file name="module.xml" hash="a970db871ea787ef10afab5a94228749"/></dir></dir></dir></dir><dir name="frontend"><dir name="interface"><dir name="theme"><dir name="layout"><file name="module.xml" hash="5a801b945ea18c54360d03519c218e4b"/></dir><dir name="template"><dir name="module"><file name="module.phtml" hash="2915883a63952ae13711051b66d5d14d"/></dir></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Namespace_Module.xml" hash="dd4b35dad8b464d4655d3ea3a3021229"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

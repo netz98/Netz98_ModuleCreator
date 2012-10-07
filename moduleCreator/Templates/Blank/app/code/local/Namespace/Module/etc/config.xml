@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   [Namespace]
+ * @package    [Namespace]_[Module]
+ * @author     ModuleCreator
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+    <modules>
+        <[Namespace]_[Module]>
+            <version>0.1.0</version>
+        </[Namespace]_[Module]>
+    </modules>
+    <frontend>
+        <routers>
+            <[module]>
+                <use>standard</use>
+                <args>
+                    <module>[Namespace]_[Module]</module>
+                    <frontName>[module]</frontName>
+                </args>
+            </[module]>
+        </routers>
+        <layout>
+            <updates>
+                <[module]>
+                    <file>[module].xml</file>
+                </[module]>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+			<[module]>
+				<use>admin</use>
+				<args>
+					<module>[Namespace]_[Module]</module>
+					<frontName>[module]</frontName>
+				</args>
+			</[module]>
+        </routers>
+    </admin>
+    <adminhtml>
+		<menu>
+			<[module] module="[module]">
+				<title>[Module]</title>
+				<sort_order>71</sort_order>               
+				<children>
+					<items module="[module]">
+						<title>Manage Items</title>
+						<sort_order>0</sort_order>
+						<action>[module]/adminhtml_[module]</action>
+					</items>
+				</children>
+			</[module]>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<[Namespace]_[Module]>
+							<title>[Module] Module</title>
+							<sort_order>10</sort_order>
+						</[Namespace]_[Module]>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<[module]>
+					<file>[module].xml</file>
+				</[module]>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <[module]>
+                <class>[Namespace]_[Module]_Model</class>
+                <resourceModel>[module]_mysql4</resourceModel>
+            </[module]>
+            <[module]_mysql4>
+                <class>[Namespace]_[Module]_Model_Mysql4</class>
+                <entities>
+                    <[module]>
+                        <table>[module]</table>
+                    </[module]>
+                </entities>
+            </[module]_mysql4>
+        </models>
+        <resources>
+            <[module]_setup>
+                <setup>
+                    <module>[Namespace]_[Module]</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </[module]_setup>
+            <[module]_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </[module]_write>
+            <[module]_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </[module]_read>
+        </resources>
+        <blocks>
+            <[module]>
+                <class>[Namespace]_[Module]_Block</class>
+            </[module]>
+        </blocks>
+        <helpers>
+            <[module]>
+                <class>[Namespace]_[Module]_Helper</class>
+            </[module]>
+        </helpers>
+    </global>
+</config>
